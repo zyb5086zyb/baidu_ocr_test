@@ -32,10 +32,10 @@ def ocr_mark():
         img = open(img_path, "rb").read()
         b64 = base64.b64encode(img)
         data = {
-            'access_token': '24.5895b543d4a9369a9b19a850f75f846d.2592000.1564468706.282335-16665908',
+            'access_token': AK,
             'image': b64
         }
-        url1 = 'https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic'     # 通用
+        url1 = 'URL'     # 通用
         # url2 = 'https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic'    # 高精度
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
         try:
